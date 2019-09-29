@@ -64,6 +64,17 @@ Even though the dictionary_7.py is the complete file, I made a new copy of that 
 python3 interactive_dictionary.py
 ```
 
+Output :
+
+1. When meaning is present
+https://github.com/theprogrammedwords/pyDictionary/blob/master/whenMeaningisPresent.PNG
+
+2. When word is containing a typing error
+https://github.com/theprogrammedwords/pyDictionary/blob/master/suggestingcorrectword.PNG
+
+3. Allowing to add usage of a word
+https://github.com/theprogrammedwords/pyDictionary/blob/master/allowingadditionofwords.PNG
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
