@@ -4,6 +4,10 @@ from difflib import SequenceMatcher
 from difflib import get_close_matches
 data = json.load(open(r"C:\Users\admin\Downloads\data.json"))
 #dictionary of 49537 words
+
+#.............................................................................................................................
+#                                               Word search segment                                                    
+#.............................................................................................................................
 def translate(word) :
     word = word.lower()
     if word in data :
@@ -24,28 +28,55 @@ def translate(word) :
             return data[get_close_matches(word,data.keys())[0]]
         
         elif user_input =="NO" :
-            return "No problem. We'll add word in dataset soon :)"
+            print("No problem. Suggest us some usage:)")
+            define_usage(data,word)
+            return data[word]
         
         else :
-            return "We didn't get you !"
+            print("We didn't get you !\n")
+            define_usage(data,word)
+            return data[word]
     
     else:
-        return "Not found, double check !"
+        return "invalid query"
+
+#.............................................................................................................................
+#                                               Word entry segment                                                    
+#.............................................................................................................................
+
+
+def define_usage(data, word):
+    msg = 'Enter usage for word [%s]: '
+    if not data.get(word):                 
+        data[word] = []                     
+        usage = input(msg % word)           
+        data[word].append(usage)    
+        with open(r"C:\Users\admin\Downloads\data.json", 'w') as outfile:
+            json.dump(data, outfile)          
+
+#.............................................................................................................................
+#                           Driver segment
+#.............................................................................................................................        
 
 print("*****************\nMY DICTIONARY\n*****************")
 word = input(".....................\nEnter search terms\n.....................\n\n")
+
+
 output = translate(word)
+
 print("---------------\nRESULT -->\n---------------\n")
+
 if type(output) == list :
     for item in output :
         print(item)
 
-else :    
+else :  
     print(output)
-    
-    
-#    test segments for insertion of words
 
+
+
+    
+#    test segments    
 #    In [1]: import json
 #       ...: d = json.load(open("data.json"))
 #    
