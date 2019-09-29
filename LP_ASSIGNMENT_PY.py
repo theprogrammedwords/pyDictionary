@@ -44,7 +44,8 @@ else :
     print(output)
     
     
-#    test segments     
+#    test segments for insertion of words
+
 #    In [1]: import json
 #       ...: d = json.load(open("data.json"))
 #    
