@@ -67,13 +67,16 @@ python3 interactive_dictionary.py
 Output :
 
 1. When meaning is present
-https://github.com/theprogrammedwords/pyDictionary/blob/master/whenMeaningisPresent.PNG
+
+![alt text](https://github.com/theprogrammedwords/pyDictionary/blob/master/whenMeaningisPresent.PNG)
 
 2. When word is containing a typing error
-https://github.com/theprogrammedwords/pyDictionary/blob/master/suggestingcorrectword.PNG
+
+![alt text](https://github.com/theprogrammedwords/pyDictionary/blob/master/suggestingcorrectword.PNG)
 
 3. Allowing to add usage of a word
-https://github.com/theprogrammedwords/pyDictionary/blob/master/allowingadditionofwords.PNG
+
+![alt text](https://github.com/theprogrammedwords/pyDictionary/blob/master/allowingadditionofwords.PNG)
 
 ## License
 
