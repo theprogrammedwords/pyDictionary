@@ -59,9 +59,9 @@ dictionary_7.py
 Note: All files are integrated with comments to help you understand each and every line/command of the code.
 
 ### Run All Together
-Even though the dictionary_7.py is the complete file, I made a new copy of that file namely LP_ASSIGNMENT_PY.py to serve as a final file.
+Even though the dictionary_7.py is the complete file, I made a new copy of that file namely interactive_dictionary.py to serve as a final file.
 ```
-python3 LP_ASSIGNMENT_PY.py
+python3 interactive_dictionary.py
 ```
 
 ## License
